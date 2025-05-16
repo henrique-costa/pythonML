@@ -16,3 +16,14 @@ print()
 texto = "Alterando o valor de sep e end"
 print(texto)
 print('Coluna 1', 'Coluna 2', 'Coluna 3', 'Coluna 4', sep=' --- ', end='...\n')
+
+# input() and print() with casting
+# Requests name, age, and height from the user
+name = input('Enter your name: ')
+age = int(input('Enter your age: '))
+height = float(input('Enter your height (m): '))
+
+# Prints the data to the console
+print('Hello ' + name + '\n')
+print('Your age is: ' + str(age) + ' years.\n')
+print('Your height is: ' + str(height) + ' meters.')
