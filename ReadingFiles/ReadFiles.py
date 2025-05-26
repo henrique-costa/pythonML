@@ -28,7 +28,7 @@ leitorCSV = csv.reader('mycsv.csv')
 with open('mycsv.csv', newline='', encoding='utf-8-sig') as csvfile:
     spamreader = csv.reader(csvfile, delimiter=';')
     for row in spamreader:
-        print(', '.join(row))
+        print('-'.join(row))
 
 
 print("\nend csv file read\n")
@@ -41,3 +41,11 @@ dfs = pd.read_excel("mycsv.xlsx", sheet_name=None)
 df = pd.read_excel("mycsv.xlsx", sheet_name=0)
 
 print(df.head())
+
+print("\n")
+
+archive = open("mycsv.csv", 'rt', encoding='utf-8-sig')
+reader = csv.reader(archive, delimiter=',')
+
+for lines in reader:
+    print(lines)
