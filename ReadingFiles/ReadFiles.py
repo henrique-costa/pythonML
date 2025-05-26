@@ -49,3 +49,11 @@ reader = csv.reader(archive, delimiter=',')
 
 for lines in reader:
     print(lines)
+
+print("\n")
+
+
+with open("mycsv.csv", "r", newline='', encoding="utf-8") as archiveCSV:
+    reader = csv.reader(archiveCSV, delimiter=';')
+    for row in reader:
+        print("Element: " + row[0] + " = " + row[1])
