@@ -1,0 +1,4 @@
+1;Mouse;300
+2;Laptop;2000
+3;Ram;120
+4;Pendrive;20
