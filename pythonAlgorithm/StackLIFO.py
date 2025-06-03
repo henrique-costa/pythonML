@@ -32,9 +32,11 @@ def is_valid_parentheses(s):
             stack.append(char)
         elif char in mapping:
             if not stack or mapping[char] != stack.pop():
+                print("false")
                 return False
     print("true")
     return not stack
 
 # Example
 is_valid_parentheses("(([]){})")  # True
+is_valid_parentheses("(([()]{}))")  # True
